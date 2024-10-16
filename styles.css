@@ -1,3 +1,9 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
 /*achtergrond*/
 main {
     background-color: #3f92b6;
@@ -14,14 +20,45 @@ main {
 
 /*tekstballon*/
 .wolkje {
+    position: relative;
+
     background-color: rgb(255, 255, 255);
     padding: 1.5em;
-    height: 8.5em;
-    margin-left: 1.5em;
+    /* height: 8.5em; */
+    height:7em;
+    /* margin-left: 1.5em; */
+    margin-bottom:3em;
 
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 80%, 55% 100%, 31% 80%, 0 80%);
+    border-radius: 2em;
+
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 80%, 55% 100%, 31% 80%, 0 80%); */
 
     width: 205px;
+}
+
+.wolkje::after {
+    content:"";
+
+    position: absolute;
+    top:calc(100% - .5px);
+    left:2em;
+    width:8em;
+    height:3em;
+
+
+    background-color: inherit;
+
+    /* clip-path:polygon(
+        30% 0%,
+        80% 0%,
+        0% 90%,
+        30% 0% */
+    /* ) */
+    clip-path:polygon(
+        20% 0%,
+        70% 0%,
+        100% 100%,
+        20% 0%)
 }
 
 
