@@ -8,9 +8,22 @@ body{
 
 
 header{
-    background-color: rgb(36, 36, 36);
-    display: grid;
+    background-color: rgb(36, 36, 36, 0.9);
+    position: fixed; /* of 'absolute' */
+    top: 0; /* of een andere waarde, zoals '50px' */
+    left: 0; /* of 'center', afhankelijk van je ontwerp */
+    width: 100%; /* of een andere breedte */
+    z-index: 100; /* hogere waarde dan andere elementen */
+    
+  clip-path: circle(0rem at calc(100% - 2rem) calc(100% - 3rem));
+  transition: clip-path 0.5s ease-in-out;
 }
+
+
+.show-menu {
+    clip-path: circle(75%);
+  }
+
 
 .menu li {
     display: flex;
@@ -18,49 +31,42 @@ header{
     align-items: center;
     border-radius: 10px;
     width: 100%;
-    grid-column: 1;
 }
 
 
 .kopje {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Poppins", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: normal;
     margin-top: .4em;
 }
 
+
 ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    height: 95.6vh;
     gap: 2em;
     justify-items: center;
     padding: 0 4rem;
 }
 
 
-
-
-
-
 .menu .home {
     background-color: #3f92b6;
-
 }
 
 .menu .testing {
     background-color: #599ae7;
-
 }
 
 .menu .statistics {
-    background-color: #06a192;
-    grid-column: 2;
-    grid-row: 2;  
+    background-color: #06a192; 
 }
 
 .menu .profile {
@@ -70,6 +76,7 @@ ul{
 .menu .lessons-nav {
     background-color: rgb(134, 97, 169);
 }
+
 
 /*hovers over li*/
 .home:hover {
@@ -96,9 +103,6 @@ ul{
     border: .5px solid white;
     filter: brightness(120%);
 }
-
-
-
 
 
 /* EINDE MENU */
@@ -243,6 +247,7 @@ button{
     position: fixed;
     right: 2em;
     bottom: 2em;
+    z-index: 101;
 
 }
 

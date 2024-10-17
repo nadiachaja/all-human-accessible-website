@@ -32,3 +32,11 @@ if (curHr >= 0 && curHr < 6) { // Tussen 0 en 5 (6 uur is niet inbegrepen)
     cloud.classList.remove("moved-down"); // Verwijder de klasse
 }
 
+
+
+let button = document.querySelector('button');
+let navigation = document.querySelector('header');
+
+button.addEventListener("click", function(){
+  navigation.classList.toggle('show-menu');
+})
