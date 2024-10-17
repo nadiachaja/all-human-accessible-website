@@ -21,7 +21,7 @@ header{
 
 /*hoe het menu tevoorschijn komt*/
 .show-menu {
-    clip-path: circle(100%);
+    clip-path: circle(80%);
   }
 
 
