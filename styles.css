@@ -6,22 +6,22 @@ body{
 /* START MENU */
 
 
-
+/*de achtergrond*/
 header{
     background-color: rgb(36, 36, 36, 0.9);
-    position: fixed; /* of 'absolute' */
-    top: 0; /* of een andere waarde, zoals '50px' */
-    left: 0; /* of 'center', afhankelijk van je ontwerp */
-    width: 100%; /* of een andere breedte */
-    z-index: 100; /* hogere waarde dan andere elementen */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 100;
     
   clip-path: circle(0rem at calc(100% - 2rem) calc(100% - 3rem));
   transition: clip-path 0.5s ease-in-out;
 }
 
-
+/*hoe het menu tevoorschijn komt*/
 .show-menu {
-    clip-path: circle(75%);
+    clip-path: circle(100%);
   }
 
 
@@ -33,10 +33,10 @@ header{
     width: 100%;
 }
 
-
+/*tekst in het menu*/
 .kopje {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-family:"Poppins", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
@@ -48,59 +48,86 @@ header{
 ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     height: 100vh;
     height: 95.6vh;
-    gap: 2em;
-    justify-items: center;
+    /* gap: 2em; */
+    /* justify-items: center; */
     padding: 0 4rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+
 }
 
 
+/*de achtergrond van de kopjes*/
 .menu .home {
     background-color: #3f92b6;
+    width: 5em;
+    height: 5em;
+    border: 1px solid white;
+
 }
 
 .menu .testing {
     background-color: #599ae7;
+    width: 5em;
+    height: 5em;
+    border: 1px solid white;
 }
 
 .menu .statistics {
     background-color: #06a192; 
+    width: 5em;
+    height: 5em;
+    border: 1px solid white;
 }
 
 .menu .profile {
     background-color: #fd8c73;
+    width: 5em;
+    height: 5em;
+    border: 1px solid white;
 }
 
 .menu .lessons-nav {
     background-color: rgb(134, 97, 169);
+    width: 5em;
+    height: 5em;
+    border: 1px solid white;
 }
 
 
 /*hovers over li*/
 .home:hover {
-    border: .5px solid white;
+    /* border: .5px solid white; */
+    border: 3px solid white;
     filter: brightness(120%);
 }
 
 .testing:hover {
-    border: .5px solid white;
+    /* border: .5px solid white; */
+    border: 3px solid white;
     filter: brightness(120%);
 }
 
 .statistics:hover {
-    border: .5px solid white;
+    /* border: .5px solid white; */
+    border: 3px solid white;
     filter: brightness(120%);
 }
 
 .lessons-nav:hover {
-    border: .5px solid white;
+    /* border: .5px solid white; */
+    border: 3px solid white;
     filter: brightness(120%);
 }
 
 .profile:hover {
-    border: .5px solid white;
+    /* border: .5px solid white; */
+    border: 3px solid white;
     filter: brightness(120%);
 }
 
@@ -237,18 +264,18 @@ span {
     font-size: 16px;
 }
 
-
+/*button naar menu*/
 button{
     background-color: rgb(36, 36, 36);
     border-radius: 50%;
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     border: none; 
     position: fixed;
     right: 2em;
     bottom: 2em;
     z-index: 101;
-
+    
 }
 
 /* EINDE HOME */
