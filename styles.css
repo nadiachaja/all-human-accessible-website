@@ -3,6 +3,110 @@ body{
     margin: 0;
 }
 
+/* START MENU */
+
+
+
+header{
+    background-color: rgb(36, 36, 36);
+    display: grid;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    grid-column: 1;
+}
+
+
+.kopje {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin-top: .4em;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 2em;
+    justify-items: center;
+    padding: 0 4rem;
+}
+
+
+
+
+
+
+.menu .home {
+    background-color: #3f92b6;
+
+}
+
+.menu .testing {
+    background-color: #599ae7;
+
+}
+
+.menu .statistics {
+    background-color: #06a192;
+    grid-column: 2;
+    grid-row: 2;  
+}
+
+.menu .profile {
+    background-color: #fd8c73;
+}
+
+.menu .lessons-nav {
+    background-color: rgb(134, 97, 169);
+}
+
+/*hovers over li*/
+.home:hover {
+    border: .5px solid white;
+    filter: brightness(120%);
+}
+
+.testing:hover {
+    border: .5px solid white;
+    filter: brightness(120%);
+}
+
+.statistics:hover {
+    border: .5px solid white;
+    filter: brightness(120%);
+}
+
+.lessons-nav:hover {
+    border: .5px solid white;
+    filter: brightness(120%);
+}
+
+.profile:hover {
+    border: .5px solid white;
+    filter: brightness(120%);
+}
+
+
+
+
+
+/* EINDE MENU */
+
+
+
+
+/* START HOME */
 
 /*achtergrond*/
 main {
@@ -11,8 +115,6 @@ main {
     height: 100vh;
     background-size: cover;
     line-height: 1.5;
-    /* display: grid;
-    grid-template-rows: auto auto auto; */
     gap: 2em;
     padding: 0;
     display: flex;
@@ -22,12 +124,9 @@ main {
 
 
 
-
-
 /*tekstballon*/
 .wolkje {
     position: relative;
-
     background-color: rgb(255, 255, 255);
     padding: 1.5em;
     height:7em;
@@ -38,6 +137,7 @@ main {
 }
 
 
+/*uitsteksel bij het wolkje om het een tekstwolkje word*/
 .wolkje::after {
     content:"";
     position: absolute;
@@ -97,35 +197,57 @@ span {
     margin: 0 auto;
     grid-row: 2;
     align-self: end;
-    /* margin-top: -3em; */
-
 }
 
-
 /*wolkje na 12 uur 's nachts*/
-.moved-down {
+.moved-down .greeting, .moved-down .sub-text {
     transform: translateY(-.8em);
     /* Pas de waarde aan voor meer of minder verschuiving */
     transition: transform 0.5s ease;
     /* Voegt een animatie toe voor de beweging */
 }
 
+
+.moved-down .lessons{
+    display: none;
+}
+
+
+.moved-down .goodnight-message{
+    display: block;
+}
+
+
 /*extra tekst die na 12 uur 's nachts komt*/
 .goodnight-message {
     display: none;
-    /* Standaard verbergen */
     margin-top: -1.5em;
-    /* Optionele marge */
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16x;
 }
 
 /*tekst tomorrow na 12 uur 's nachts*/
 .purple {
     color: #6a64bf;
-    /* Stel de kleur in op paars */
-    font-size: 17px;
+    font-size: 16px;
 }
+
+
+button{
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    border: none; 
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+
+}
+
+/* EINDE HOME */
+
+
 
 
