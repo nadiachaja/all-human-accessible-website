@@ -62,6 +62,14 @@ ul{
 
 }
 
+.menu li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+
 .svg-home{
   margin-top: .3em;
 }
