@@ -249,6 +249,7 @@ h1 {
     font-weight: normal;
 }
 
+
 /*tekst in wolkje*/
 span {
     display: block;
@@ -288,7 +289,7 @@ span {
     margin-top: -1.5em;
     font-family: "Poppins", sans-serif;
     font-weight: normal;
-    font-size: 16x;
+    font-size: 16px;
 }
 
 /*tekst tomorrow na 12 uur 's nachts*/
@@ -298,7 +299,7 @@ span {
 }
 
 /*button naar menu*/
-button{
+/* button{
     background-color: rgb(36, 36, 36);
     border-radius: 50%;
     width: 5em;
@@ -308,8 +309,31 @@ button{
     right: 2em;
     bottom: 2em;
     z-index: 101;
-    
+} */
+
+
+button {
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    border: none; 
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/*svg (kruisje) als het menu open is*/
+#menuIcon {
+    width: 45px; 
+    height: 45px; 
+    fill: #ffffff; 
+}
+
 
 /* EINDE HOME */
 

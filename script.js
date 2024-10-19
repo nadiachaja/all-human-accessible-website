@@ -33,10 +33,41 @@ if (curHr >= 0 && curHr < 6) { // Tussen 0 en 5 (6 uur is niet inbegrepen)
 }
 
 
-//menu open en sluiten
-let button = document.querySelector('button');
+
+
+// menu openen en sluiten 
+let button = document.querySelector('#menuToggle');
 let navigation = document.querySelector('header');
 
-button.addEventListener("click", function(){
-  navigation.classList.toggle('show-menu');
-})
+button.addEventListener("click", function() {
+    navigation.classList.toggle('show-menu');
+    
+
+
+
+// tabindex voor menu open en dicht 
+    if (navigation.classList.contains('show-menu')) {
+        button.setAttribute('tabindex', '8'); 
+    } else {
+        button.setAttribute('tabindex', '2'); 
+        button.focus(); 
+    }
+});
+
+
+
+//andere svg als het menu open is en als het menu dicht is 
+const menuIcon = document.getElementById('menuIcon');
+
+button.addEventListener('click', function() {
+    if (menuIcon.innerHTML.includes('M 6.0626 19.5390')) {
+        // Nieuwe SVG voor het open menu
+        menuIcon.innerHTML = '<path d="M16 8L8 16M8 8L16 16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>';
+        menuIcon.setAttribute('viewBox', '0 0 24 24'); // Nieuwe viewBox instellen
+    } else {
+        // Terug naar de originele SVG voor het gesloten menu
+        menuIcon.innerHTML = '<path d="M 6.0626 19.5390 L 49.9144 19.5390 C 50.8984 19.5390 51.7187 18.7656 51.7187 17.7812 C 51.7187 16.7968 50.8984 16 49.9144 16 L 6.0626 16 C 5.0782 16 4.2813 16.7968 4.2813 17.7812 C 4.2813 18.7656 5.0782 19.5390 6.0626 19.5390 Z M 6.0626 29.7578 L 49.9144 29.7578 C 50.8984 29.7578 51.7187 28.9843 51.7187 28 C 51.7187 26.9921 50.8984 26.1953 49.9144 26.1953 L 6.0626 26.1953 C 5.0782 26.1953 4.2813 26.9921 4.2813 28 C 4.2813 28.9843 5.0782 29.7578 6.0626 29.7578 Z M 6.0626 40 L 49.9144 40 C 50.8984 40 51.7187 39.2031 51.7187 38.1953 C 51.7187 37.2109 50.8984 36.4375 49.9144 36.4375 L 6.0626 36.4375 C 5.0782 36.4375 4.2813 37.2109 4.2813 38.1953 C 4.2813 39.2031 5.0782 40 6.0626 40 Z"/>';
+        menuIcon.setAttribute('viewBox', '0 0 56 56'); // Terug naar originele viewBox
+    }
+});
+
