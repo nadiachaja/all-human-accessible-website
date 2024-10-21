@@ -102,8 +102,8 @@ ul{
     background-color: #4E77A4;
     /* width: 5em;
     height: 5em; */
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     border: 1px solid white;
     justify-content: center;
     justify-self: end;
@@ -116,8 +116,8 @@ ul{
     background-color: #3C77BB;
     /* width: 5em;
     height: 5em; */
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     border: 1px solid white;
     justify-content: center;
     justify-self: start;
@@ -129,8 +129,8 @@ ul{
     background-color: #07847A; 
     /* width: 5em;
     height: 5em; */
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     border: 1px solid white;
     justify-content: center;
     justify-self: start;
@@ -142,8 +142,8 @@ ul{
     background-color: #CC4A00;
     /* width: 5em;
     height: 5em; */
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     border: 1px solid white;
     justify-content: center;
     justify-self: end;
@@ -154,8 +154,8 @@ ul{
     background-color: rgb(134, 97, 169);
     /* width: 5em;
     height: 5em; */
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     border: 1px solid white;
     justify-content: center;
     justify-self: end;
@@ -195,7 +195,7 @@ ul{
 
 
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .kopje {
       font-size: 19px;
     }
@@ -208,13 +208,14 @@ ul{
           width:48px;
           height:48px;
       }
+
   }
-  
-  @media screen and (min-width: 1000px) {
+
+ @media screen and (min-width: 1000px) {
     .kopje {
       font-size: 25px;
     }
-  }
+  } */
 
 
 /* EINDE MENU */
