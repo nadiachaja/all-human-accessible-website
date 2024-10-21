@@ -195,27 +195,37 @@ ul{
 
 
 
-/* @media screen and (min-width: 600px) {
-    .kopje {
-      font-size: 19px;
-    }
-      .svg-home{
-          width:48px;
-          height:48px;
-      }
-  
-       .svg-testing{
-          width:48px;
-          height:48px;
-      }
+@media screen and (min-width: 800px){
 
-  }
-
- @media screen and (min-width: 1000px) {
-    .kopje {
-      font-size: 25px;
+    .menu .home {
+    width: 6em;
+    height: 6em;    
     }
-  } */
+    
+    .menu .testing {
+        width: 6em;
+        height: 6em;    
+    }
+    
+    .menu .statistics {
+    width: 6em;
+    height: 6em;    
+    }
+    
+    .menu .lessons-nav {
+    width: 6em;
+    height: 6em;    
+    }
+    
+    .menu .profile {
+    width: 6em;
+    height: 6em;    
+    }
+    
+        .kopje{
+            font-size:20px;
+        }
+    }
 
 
 /* EINDE MENU */
