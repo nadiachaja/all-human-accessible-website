@@ -47,18 +47,19 @@ header{
 
 
 ul{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
     align-items: center;
     height: 100vh;
-    height: 95.6vh;
-    /* gap: 2em; */
+    /* height: 95.6vh; */
     /* justify-items: center; */
     padding: 0 4rem;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
+    gap: 3.5em;
+   
 
 }
 
@@ -97,39 +98,67 @@ ul{
 
 /*de achtergrond van de kopjes*/
 .menu .home {
-    background-color: #3f92b6;
-    width: 5em;
-    height: 5em;
+    /* background-color: #3f92b6; */
+    background-color: #4E77A4;
+    /* width: 5em;
+    height: 5em; */
+    width: 10vh;
+    height: 10vh;
     border: 1px solid white;
+    justify-content: center;
+    justify-self: end;
+    align-self: end;
 
 }
 
 .menu .testing {
-    background-color: #599ae7;
-    width: 5em;
-    height: 5em;
+    /* background-color: #599ae7; */
+    background-color: #3C77BB;
+    /* width: 5em;
+    height: 5em; */
+    width: 10vh;
+    height: 10vh;
     border: 1px solid white;
+    justify-content: center;
+    justify-self: start;
+    align-self: end;
 }
 
 .menu .statistics {
-    background-color: #06a192; 
-    width: 5em;
-    height: 5em;
+    /* background-color: #06a192;  */
+    background-color: #07847A; 
+    /* width: 5em;
+    height: 5em; */
+    width: 10vh;
+    height: 10vh;
     border: 1px solid white;
+    justify-content: center;
+    justify-self: start;
+ 
 }
 
 .menu .profile {
-    background-color: #fd8c73;
-    width: 5em;
-    height: 5em;
+    /* background-color: #fd8c73; */
+    background-color: #CC4A00;
+    /* width: 5em;
+    height: 5em; */
+    width: 10vh;
+    height: 10vh;
     border: 1px solid white;
+    justify-content: center;
+    justify-self: end;
+    align-self: start;
 }
 
 .menu .lessons-nav {
     background-color: rgb(134, 97, 169);
-    width: 5em;
-    height: 5em;
+    /* width: 5em;
+    height: 5em; */
+    width: 10vh;
+    height: 10vh;
     border: 1px solid white;
+    justify-content: center;
+    justify-self: end;
 }
 
 
@@ -163,6 +192,29 @@ ul{
     border: 3px solid white;
     filter: brightness(120%);
 }
+
+
+
+@media screen and (min-width: 600px) {
+    .kopje {
+      font-size: 19px;
+    }
+      .svg-home{
+          width:48px;
+          height:48px;
+      }
+  
+       .svg-testing{
+          width:48px;
+          height:48px;
+      }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .kopje {
+      font-size: 25px;
+    }
+  }
 
 
 /* EINDE MENU */
