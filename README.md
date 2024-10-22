@@ -28,13 +28,13 @@ In het tekstwolkje staat Let's do it! en als je daar op klikt moet je naar de pa
 
 In het tekstwolkje verandert de tekst met de tijd mee. 
 
-Good morning van 6 uur ’s ochtends t/m 12 uur ’s middags.
+* Good morning van 6 uur ’s ochtends t/m 12 uur ’s middags.
 
-Good afternoon van 12 uur ’s middags t/m 6 uur ’s avonds.
+* Good afternoon van 12 uur ’s middags t/m 6 uur ’s avonds.
 
-Good evening van 6 uur ’s avonds t/m 12 uur ’s nachts.
+* Good evening van 6 uur ’s avonds t/m 12 uur ’s nachts.
 
-Na 12 uur ’s nachts veranderd de tekst in Good night en de tekst eronder veranderd in It’s time to sleep en I see you tomorrow dat is t/m 6 uur ’s ochtends.
+* Na 12 uur ’s nachts veranderd de tekst in Good night en de tekst eronder veranderd in It’s time to sleep en I see you tomorrow dat is t/m 6 uur ’s ochtends.
 
 ## Responsive
 De pagina's zijn te gebruiken voor telefoon, tablet en laptop. 
