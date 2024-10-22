@@ -228,6 +228,40 @@ ul{
     }
 
 
+    
+@media screen and (min-width: 700px){
+
+       .menu .home {
+    width: 5.5em;
+    height: 5.5em;    
+    }
+    
+    .menu .testing {
+        width: 5.5em;
+        height: 5.5em;    
+    }
+    
+    .menu .statistics {
+    width: 5.5em;
+    height: 5.5em;    
+    }
+    
+    .menu .lessons-nav {
+    width: 5.5em;
+    height: 5.5em;    
+    }
+    
+    .menu .profile {
+    width: 5.5em;
+    height: 5.5em;    
+    }
+    
+        .kopje{
+            font-size:17px;
+        } 
+}
+
+
 /* EINDE MENU */
 
 
