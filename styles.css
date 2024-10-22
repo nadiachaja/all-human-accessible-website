@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
 }
@@ -7,23 +7,23 @@ body{
 
 
 /*de achtergrond*/
-header{
+header {
     background-color: rgb(36, 36, 36, 0.9);
-    position: fixed; 
+    position: fixed;
     height: 100vh;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 100;
-    
-  clip-path: circle(0rem at calc(100% - 2rem) calc(100% - 3rem));
-  transition: clip-path 0.5s ease-in-out;
+
+    clip-path: circle(0rem at calc(100% - 2rem) calc(100% - 3rem));
+    transition: clip-path 0.5s ease-in-out;
 }
 
 /*hoe het menu tevoorschijn komt*/
 .show-menu {
     clip-path: circle(80%);
-  }
+}
 
 
 .menu li {
@@ -38,7 +38,7 @@ header{
 .kopje {
     /* display: flex;
     justify-content: center; */
-    font-family:"Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: normal;
@@ -46,24 +46,24 @@ header{
 }
 
 
-ul{
+ul {
     /* display: flex;
     flex-direction: column;
     justify-content: space-evenly; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     height: 100vh;
     /* height: 95.6vh; */
     /* justify-items: center; */
     padding: 0 4rem;
     gap: 3.5em;
-   
+
 
 }
 
-.menu li > a {
+.menu li>a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,28 +71,28 @@ ul{
 }
 
 
-.svg-home{
-  margin-top: .3em;
+.svg-home {
+    margin-top: .3em;
 }
 
-.svg-testing{
-    margin-top: .3em; 
+.svg-testing {
+    margin-top: .3em;
 }
 
-.svg-lessons-nav{
-    margin-top: .3em; 
+.svg-lessons-nav {
+    margin-top: .3em;
 }
 
-.svg-{
-    margin-top: .3em; 
+.svg- {
+    margin-top: .3em;
 }
 
-.svg-statistics{
-    margin-top: .3em; 
+.svg-statistics {
+    margin-top: .3em;
 }
 
-.svg-profile{
-    margin-top: .3em; 
+.svg-profile {
+    margin-top: .3em;
 }
 
 
@@ -126,7 +126,7 @@ ul{
 
 .menu .statistics {
     /* background-color: #06a192;  */
-    background-color: #07847A; 
+    background-color: #07847A;
     width: 5em;
     height: 5em;
     /* width: 12vh;
@@ -134,7 +134,7 @@ ul{
     border: 1px solid white;
     justify-content: center;
     justify-self: start;
- 
+
 }
 
 .menu .profile {
@@ -195,70 +195,112 @@ ul{
 
 
 
-@media screen and (min-width: 800px){
+
+
+@media screen and (min-width: 700px) {
 
     .menu .home {
-    width: 6em;
-    height: 6em;    
-    }
-    
-    .menu .testing {
-        width: 6em;
-        height: 6em;    
-    }
-    
-    .menu .statistics {
-    width: 6em;
-    height: 6em;    
-    }
-    
-    .menu .lessons-nav {
-    width: 6em;
-    height: 6em;    
-    }
-    
-    .menu .profile {
-    width: 6em;
-    height: 6em;    
-    }
-    
-        .kopje{
-            font-size:18px;
-        }
+        width: 5.5em;
+        height: 5.5em;
     }
 
-
-    
-@media screen and (min-width: 700px){
-
-       .menu .home {
-    width: 5.5em;
-    height: 5.5em;    
-    }
-    
     .menu .testing {
         width: 5.5em;
-        height: 5.5em;    
+        height: 5.5em;
     }
-    
+
     .menu .statistics {
-    width: 5.5em;
-    height: 5.5em;    
+        width: 5.5em;
+        height: 5.5em;
     }
-    
+
     .menu .lessons-nav {
-    width: 5.5em;
-    height: 5.5em;    
+        width: 5.5em;
+        height: 5.5em;
     }
-    
+
     .menu .profile {
-    width: 5.5em;
-    height: 5.5em;    
+        width: 5.5em;
+        height: 5.5em;
     }
-    
-        .kopje{
-            font-size:17px;
-        } 
+
+    .kopje {
+        font-size: 17px;
+    }
+
+    .menu li {
+        border-radius: 15px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+    .menu .home {
+        width: 6em;
+        height: 6em;
+    }
+
+    .menu .testing {
+        width: 6em;
+        height: 6em;
+    }
+
+    .menu .statistics {
+        width: 6em;
+        height: 6em;
+    }
+
+    .menu .lessons-nav {
+        width: 6em;
+        height: 6em;
+    }
+
+    .menu .profile {
+        width: 6em;
+        height: 6em;
+    }
+
+    .kopje {
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .menu .home {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+    .menu .testing {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+    .menu .statistics {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+    .menu .lessons-nav {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+    .menu .profile {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+    .kopje {
+        font-size: 19px;
+    }
+
 }
 
 
@@ -272,7 +314,7 @@ ul{
 /*achtergrond*/
 main {
     background-color: #3f92b6;
-    background-image: url(assets/house-mouse.svg); 
+    background-image: url(assets/house-mouse.svg);
     height: 100vh;
     background-size: cover;
     line-height: 1.5;
@@ -290,8 +332,8 @@ main {
     position: relative;
     background-color: rgb(255, 255, 255);
     padding: 1.5em;
-    height:7em;
-    margin-bottom:3em;
+    height: 7em;
+    margin-bottom: 3em;
     border-radius: 1.5em;
     width: 225px;
     margin-left: 1em;
@@ -300,20 +342,19 @@ main {
 
 /*uitsteksel bij het wolkje om het een tekstwolkje word*/
 .wolkje::after {
-    content:"";
+    content: "";
     position: absolute;
-    top:calc(100% - .5px);
-    left:2em;
-    width:8em;
-    height:3em;
+    top: calc(100% - .5px);
+    left: 2em;
+    width: 8em;
+    height: 3em;
 
     background-color: inherit;
 
-    clip-path:polygon(
-        40% 0%,
-        80% 0%,
-        90% 90%,
-        40% 0%)
+    clip-path: polygon(40% 0%,
+            80% 0%,
+            90% 90%,
+            40% 0%)
 }
 
 
@@ -362,7 +403,8 @@ span {
 }
 
 /*wolkje na 12 uur 's nachts*/
-.moved-down .greeting, .moved-down .sub-text {
+.moved-down .greeting,
+.moved-down .sub-text {
     transform: translateY(-.8em);
     /* Pas de waarde aan voor meer of minder verschuiving */
     transition: transform 0.5s ease;
@@ -370,12 +412,12 @@ span {
 }
 
 
-.moved-down .lessons{
+.moved-down .lessons {
     display: none;
 }
 
 
-.moved-down .goodnight-message{
+.moved-down .goodnight-message {
     display: block;
 }
 
@@ -414,7 +456,7 @@ button {
     border-radius: 50%;
     width: 5em;
     height: 5em;
-    border: none; 
+    border: none;
     position: fixed;
     right: 2em;
     bottom: 2em;
@@ -426,14 +468,10 @@ button {
 
 /*svg (kruisje) als het menu open is*/
 #menuIcon {
-    width: 45px; 
-    height: 45px; 
-    fill: #ffffff; 
+    width: 45px;
+    height: 45px;
+    fill: #ffffff;
 }
 
 
 /* EINDE HOME */
-
-
-
-
