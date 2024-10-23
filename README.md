@@ -41,12 +41,16 @@ De pagina's zijn te gebruiken voor telefoon, tablet en laptop.
 
 Telefoon 
 
-<img width="136" alt="telefoon" src="https://github.com/user-attachments/assets/6d741be5-ee9a-497f-bebe-2032bbef5255">  <img width="135" alt="telefoon met menu" src="https://github.com/user-attachments/assets/15515374-64a6-4c79-8ea4-659da099742b">
+<img width="137" alt="telefoon" src="https://github.com/user-attachments/assets/0cef543c-3e83-4847-920e-c6c3c0b006cc"><img width="136" alt="telefoon met menu" src="https://github.com/user-attachments/assets/2054b1cd-5234-4a95-8baa-e20668848018">
+
+
 
 
 Tablet 
 
-<img width="229" alt="tablet" src="https://github.com/user-attachments/assets/f71ed8c8-4cca-4c81-9f23-3b9b891a772c">  <img width="229" alt="tablet met menu" src="https://github.com/user-attachments/assets/87369592-955e-4133-875f-c326f6a4d20d">
+<img width="230" alt="tablet" src="https://github.com/user-attachments/assets/ff4ce1c0-90dd-4b6b-9cda-009174dcf381"><img width="228" alt="tablet met menu" src="https://github.com/user-attachments/assets/8f8bc9e5-222f-4ad3-a909-030262329316">
+
+
 
 
 Laptop 
