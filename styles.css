@@ -317,6 +317,8 @@ main {
     background-image: url(assets/house-mouse.svg);
     height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
     line-height: 1.5;
     gap: 2em;
     padding: 0;
