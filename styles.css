@@ -47,16 +47,11 @@ header {
 
 
 ul {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     height: 100vh;
-    /* height: 95.6vh; */
-    /* justify-items: center; */
     padding: 0 4rem;
     gap: 3.5em;
 
@@ -69,6 +64,24 @@ ul {
     align-items: center;
     text-decoration: none;
 }
+
+
+/*de wobble bij de kopjes in het menu*/
+#home-icon { transition: transform 0.2s; 
+    transform-origin: center; 
+    } 
+    
+    #home-icon:hover { animation: wobble 1s infinite; 
+    } 
+    
+
+    @keyframes wobble {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(3deg); }
+        50% { transform: rotate(-3deg); }
+        75% { transform: rotate(1deg); }
+        100% { transform: rotate(0deg); }
+      }
 
 
 .svg-home {
@@ -102,8 +115,6 @@ ul {
     background-color: #4E77A4;
     width: 5em;
     height: 5em;
-    /* width: 12vh;
-    height: 12vh; */
     border: 1px solid white;
     justify-content: center;
     justify-self: end;
@@ -116,8 +127,6 @@ ul {
     background-color: #3C77BB;
     width: 5em;
     height: 5em;
-    /* width: 12vh;
-    height: 12vh; */
     border: 1px solid white;
     justify-content: center;
     justify-self: start;
@@ -129,8 +138,6 @@ ul {
     background-color: #07847A;
     width: 5em;
     height: 5em;
-    /* width: 12vh;
-    height: 12vh; */
     border: 1px solid white;
     justify-content: center;
     justify-self: start;
@@ -142,8 +149,6 @@ ul {
     background-color: #CC4A00;
     width: 5em;
     height: 5em;
-    /* width: 12vh;
-    height: 12vh; */
     border: 1px solid white;
     justify-content: center;
     justify-self: end;
@@ -154,8 +159,6 @@ ul {
     background-color: rgb(134, 97, 169);
     width: 5em;
     height: 5em;
-    /* width: 12vh;
-    height: 12vh; */
     border: 1px solid white;
     justify-content: center;
     justify-self: end;
@@ -164,31 +167,26 @@ ul {
 
 /*hovers over li*/
 .home:hover {
-    /* border: .5px solid white; */
     border: 3px solid white;
     filter: brightness(120%);
 }
 
 .testing:hover {
-    /* border: .5px solid white; */
     border: 3px solid white;
     filter: brightness(120%);
 }
 
 .statistics:hover {
-    /* border: .5px solid white; */
     border: 3px solid white;
     filter: brightness(120%);
 }
 
 .lessons-nav:hover {
-    /* border: .5px solid white; */
     border: 3px solid white;
     filter: brightness(120%);
 }
 
 .profile:hover {
-    /* border: .5px solid white; */
     border: 3px solid white;
     filter: brightness(120%);
 }
@@ -438,19 +436,6 @@ span {
     color: #6a64bf;
     font-size: 16px;
 }
-
-/*button naar menu*/
-/* button{
-    background-color: rgb(36, 36, 36);
-    border-radius: 50%;
-    width: 5em;
-    height: 5em;
-    border: none; 
-    position: fixed;
-    right: 2em;
-    bottom: 2em;
-    z-index: 101;
-} */
 
 
 button {
