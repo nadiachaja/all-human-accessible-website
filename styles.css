@@ -16,13 +16,13 @@ header {
     width: 100%;
     z-index: 100;
 
-    clip-path: circle(0rem at calc(100% - 2rem) calc(100% - 3rem));
-    transition: clip-path 0.5s ease-in-out;
+    clip-path: circle(0rem at calc(100% - 2rem) calc(100% - 3rem)); /*hoe groot de cirkel*/
+    transition: clip-path 0.5s ease-in-out; /*hoe snel het menu opent*/
 }
 
 /*hoe het menu tevoorschijn komt*/
 .show-menu {
-    clip-path: circle(80%);
+    clip-path: circle(80%); /*maakt de cirkel als het menu opent*/
 }
 
 
@@ -36,8 +36,6 @@ header {
 
 /*tekst in het menu*/
 .kopje {
-    /* display: flex;
-    justify-content: center; */
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
@@ -150,7 +148,7 @@ ul {
 /*hovers over li*/
 .home:hover {
     border: 3px solid white;
-    filter: brightness(120%);
+    filter: brightness(120%); /*hoe licht het element wordt*/
 }
 
 .testing:hover {
@@ -176,7 +174,7 @@ ul {
 
 
 
-
+/*dat dit van toepassing is als het scherm 700px en groter is*/
 @media screen and (min-width: 700px) {
 
     .menu .home {
@@ -215,7 +213,7 @@ ul {
 }
 
 
-
+/*dat dit van toepassing is als het scherm 800px en tot en met 999px is*/
 @media screen and (min-width: 800px) and (max-width: 999px) {
 
     .menu .home {
@@ -249,7 +247,7 @@ ul {
 }
 
 
-
+/*dat dit van toepassing is als het scherm 1000px en groter is*/
 @media screen and (min-width: 1000px) {
 
     .menu .home {
@@ -296,9 +294,9 @@ main {
     background-color: #3f92b6;
     background-image: url(assets/house-mouse.svg);
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-size: cover; /*dat de achtergrond meebeweegt met de grote van het scherm*/
+    background-repeat: no-repeat; /*dat de achtergrond meebeweegt met de grote van het scherm*/
+    background-position: center; /*dat de achtergrond meebeweegt met de grote van het scherm*/
     line-height: 1.5;
     gap: 2em;
     padding: 0;
@@ -324,9 +322,9 @@ main {
 
 /*uitsteksel bij het wolkje om het een tekstwolkje word*/
 .wolkje::after {
-    content: "";
+    content: ""; /*dit moet altijd er staan anders werkt het niet*/
     position: absolute;
-    top: calc(100% - .5px);
+    top: calc(100% - .5px); /*hoe groot het is*/
     left: 2em;
     width: 8em;
     height: 3em;
@@ -387,10 +385,8 @@ span {
 /*wolkje na 12 uur 's nachts*/
 .moved-down .greeting,
 .moved-down .sub-text {
-    transform: translateY(-.8em);
-    /* Pas de waarde aan voor meer of minder verschuiving */
-    transition: transform 0.5s ease;
-    /* Voegt een animatie toe voor de beweging */
+    transform: translateY(-.8em); /*hoe het staat*/
+    transition: transform 0.5s ease; /* hoe lang het duurt*/
 }
 
 
@@ -429,7 +425,7 @@ button {
     position: fixed;
     right: 2em;
     bottom: 2em;
-    z-index: 101;
+    z-index: 101; /*dat het elemnt nu boven andere elementen staat*/
     display: flex;
     align-items: center;
     justify-content: center;
